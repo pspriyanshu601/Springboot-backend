@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file
-ARG JAR_FILE=target/your-app.jar
+ARG JAR_FILE=target/demo-0.0.1-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} app.jar
+ADD ${JAR_FILE} demo.jar
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "/demo.jar"]
