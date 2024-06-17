@@ -13,8 +13,8 @@ VOLUME /tmp
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-# Print the current working directory
-RUN ls
+# Print the contents of the current directory
+CMD ls -l
 
 # The application's jar file
 ARG JAR_FILE=target/demo-0.0.1-SNAPSHOT.jar
